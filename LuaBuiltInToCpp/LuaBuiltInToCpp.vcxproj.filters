@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Ncg">
+      <UniqueIdentifier>{d88e08a4-9138-4dc7-bb78-fc59449613ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ncg\Header">
+      <UniqueIdentifier>{313a1685-3bb1-4d59-a42d-dc59578b9fdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ncg\Source">
+      <UniqueIdentifier>{8e1ee7b9-aae2-4721-8f6d-3c28959fde8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="NcgUtility.cxx">
+      <Filter>Ncg\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NcgLuaHelper.cxx">
+      <Filter>Ncg\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NcgLuaBase.cxx">
+      <Filter>Ncg\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NcgLuaManager.cxx">
+      <Filter>Ncg\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hello.lua">
+      <Filter>ソース ファイル</Filter>
+    </None>
+    <None Include="hello2.lua">
+      <Filter>ソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NcgUtility.hxx">
+      <Filter>Ncg\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="NcgLuaHelper.hxx">
+      <Filter>Ncg\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="NcgLuaBase.hxx">
+      <Filter>Ncg\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="NcgLuaManager.hxx">
+      <Filter>Ncg\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="NcgLua.hpp">
+      <Filter>Ncg\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
