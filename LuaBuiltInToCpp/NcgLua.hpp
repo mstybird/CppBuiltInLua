@@ -1,5 +1,5 @@
 #pragma once
-#include"NcgLuaManager.hxx"
+#include"NcgLuaDatabase.h"
 #ifdef _M_X64
 #ifdef _DEBUG
 #pragma comment(lib,"Lua/lib/lua5.3.3_x64d.lib")

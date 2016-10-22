@@ -738,6 +738,8 @@ template void NcgLuaHelper::GetReturnValue(std::vector<std::string>& aOutValue, 
 template<typename tType>
 void NcgLuaHelper::GetReturnValue(std::vector<tType>& aOutValue, const int aIndex)
 {
+	//戻り値のみのベクタにするためにクリアする
+	aOutValue.clear();
 	int lStackCount = lua_gettop(mStateWeak);
 	int lIndex;
 	bool lResult = false;

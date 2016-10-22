@@ -39,12 +39,21 @@
     <ClCompile Include="NcgLuaManager.cxx">
       <Filter>Ncg\Source</Filter>
     </ClCompile>
+    <ClCompile Include="NcgLuaDatabase.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="hello.lua">
       <Filter>ソース ファイル</Filter>
     </None>
     <None Include="hello2.lua">
+      <Filter>ソース ファイル</Filter>
+    </None>
+    <None Include="AI\htn.lua">
+      <Filter>ソース ファイル</Filter>
+    </None>
+    <None Include="AI\htn_attack.lua">
       <Filter>ソース ファイル</Filter>
     </None>
   </ItemGroup>
@@ -66,6 +75,9 @@
     </ClInclude>
     <ClInclude Include="Header.h">
       <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="NcgLuaDatabase.h">
+      <Filter>Ncg\Header</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

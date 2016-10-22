@@ -1,10 +1,14 @@
 #pragma once
 #include"NcgLuaBase.hxx"
 #include"NcgUtility.hxx"
+class NcgLuaDatabase;
 class NcgLuaManager :public NcgLuaBase {
-public:
+	friend class NcgLuaDatabase;
+protected:
 	NcgLuaManager();
 	~NcgLuaManager();
+
+public:
 
 	//関数を直接呼び出す
 	//呼び出しに成功したらtrueを返すが、この時点で関数自体の戻り値は取得できない
@@ -51,6 +55,9 @@ public:
 	//値を取得する
 	template<typename tType>
 	bool GetGlobal(const std::string&aValueName, tType& aOutValue);
+
+	//不完全なクローン。修正時期未定(修正が必要になった時)
+	void Clone(NcgLuaManager&aOut);
 
 private:
 	void GetFunction(const char*aFuncName);

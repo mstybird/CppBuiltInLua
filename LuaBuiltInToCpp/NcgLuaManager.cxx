@@ -71,6 +71,20 @@ void NcgLuaManager::SetFunction(
 	mArgsCount = aArgsCount;
 }
 
+void NcgLuaManager::Clone(NcgLuaManager & aOut)
+{
+	aOut.Release();
+	aOut.mArgsCount = this->mArgsCount;
+	aOut.mFirstCalled = this->mFirstCalled;
+	aOut.mFuncName = this->mFuncName;
+	aOut.mHelper = this->mHelper;
+	aOut.mLoadedLua = this->mLoadedLua;
+	aOut.mLoadedStandardLib= this->mLoadedStandardLib;
+	aOut.mReturnCount = this->mReturnCount;
+	aOut.mState = this->mState;
+	return;
+}
+
 void NcgLuaManager::GetFunction(const char* aFuncName)
 {
 	lua_getglobal(mState, aFuncName);

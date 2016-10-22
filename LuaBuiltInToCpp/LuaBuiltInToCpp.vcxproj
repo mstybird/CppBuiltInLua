@@ -150,11 +150,14 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NcgLuaBase.cxx" />
+    <ClCompile Include="NcgLuaDatabase.cpp" />
     <ClCompile Include="NcgLuaHelper.cxx" />
     <ClCompile Include="NcgLuaManager.cxx" />
     <ClCompile Include="NcgUtility.cxx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AI\htn.lua" />
+    <None Include="AI\htn_attack.lua" />
     <None Include="hello.lua" />
     <None Include="hello2.lua" />
   </ItemGroup>
@@ -162,6 +165,7 @@
     <ClInclude Include="Header.h" />
     <ClInclude Include="NcgLua.hpp" />
     <ClInclude Include="NcgLuaBase.hxx" />
+    <ClInclude Include="NcgLuaDatabase.h" />
     <ClInclude Include="NcgLuaHelper.hxx" />
     <ClInclude Include="NcgLuaManager.hxx" />
     <ClInclude Include="NcgUtility.hxx" />
